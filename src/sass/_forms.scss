@@ -1,0 +1,71 @@
+input[type="submit"],
+input[type="button"],
+input[type="reset"] {
+    -webkit-appearance: button;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="url"],
+textarea {
+    -webkit-appearance: none;
+    font-family: $font-family;
+    font-size: $base-font-size;
+    background: white;
+    color: $base-color;
+    border: solid 1px #adadad;
+    border-radius: 0;
+    padding: 8px;
+}
+
+label,
+textarea {
+    margin: 0;
+}
+
+label {
+    display: block;
+    cursor: pointer;
+    font-weight: bold;
+    width: 164px;
+}
+
+textarea {
+    display: block;
+    overflow: auto;
+    resize: vertical;
+    min-height: 150px;
+    width: 100%;
+}
+
+.form-group {
+    margin-top: 15px;
+
+    &:first-child {
+        margin-top: 0;
+    }
+}
+
+.form-required {
+    color: $error-color;
+}
+
+.form-error {
+    color: $error-color;
+    margin-top: 3px;
+}
+
+.form-message {
+    padding: 8px 15px;
+
+    &--error {
+        color: $error-color;
+        border: 1px solid #b83d6a;
+    }
+
+    &--success {
+        color: #00903a;
+        border: 1px solid #0a4;
+    }
+}

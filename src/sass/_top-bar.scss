@@ -1,0 +1,26 @@
+.top-bar {
+    position: relative;
+    border-bottom: 1px solid $border-color;
+
+    &__nav-expand {
+        display: inline-block;
+        margin: 20px;
+    }
+
+    &__photo {
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        font-size: 0;
+
+        img {
+            border-radius: 50%;
+        }
+    }
+}
+
+@media(min-width: $breakpoint) {
+    .top-bar {
+        display: none;
+    }
+}

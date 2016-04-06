@@ -1,0 +1,49 @@
+{% extends 'layouts/default.html' %}
+
+{% block title %}Prestations{% endblock %}
+{% block description %}Découvrez la liste des prestations proposées par Florent Desjardins, développeur web freelance à Lyon{% endblock %}
+
+{% block content %}
+    <h2>Prestations</h2>
+    <ul class="alt-list mtm">
+        <li class="alt-list__item">HTML & CSS maintenable et modulaire</li>
+        <li class="alt-list__item">Développement frontend</li>
+        <li class="alt-list__item">Création de sites internet</li>
+        <li class="alt-list__item">Réalistation d'API REST</li>
+        <li class="alt-list__item"><a href="/formations">Formations</a> pour professionnels et particuliers autour du développement web</li>
+    </ul>
+
+    <h2 class="mtl">Avec quoi je travaille</h2>
+    <ul class="alt-list mtm">
+        <li class="alt-list__item">HTML</li>
+        <li class="alt-list__item">CSS avec pré-processeurs (Sass)</li>
+        <li class="alt-list__item">Javascript</li>
+        <li class="alt-list__item">Gulp</li>
+        <li class="alt-list__item">Générateurs de sites statiques</li>
+        <li class="alt-list__item">React</li>
+        <li class="alt-list__item">Node.js</li>
+        <li class="alt-list__item">Python / Django / Flask</li>
+        <li class="alt-list__item">PHP</li>
+        <li class="alt-list__item">GIT</li>
+        <li class="alt-list__item">Apache / Nginx</li>
+        <li class="alt-list__item">MySQL / PostgreSQL / MongoDB</li>
+    </ul>
+
+    <h3 class="mtl">Je vous rappelle !</h3>
+    <p>Laissez moi vos coordonnées, je vous rappelle dès que possible !</p>
+
+    <form class="mtm" id="recallform" method="post" action="https://docs.google.com/forms/d/1r97TceVzfEDZbiScBrJwHU7FTrhOXehkP0TS0zatSj8/formResponse">
+        <input type="hidden" name="entry_1601581835" value="Prestations">
+        <div class="form-group">
+            <label for="entry_910138129">Nom <span class="form-required">*</span></label>
+            <input type="text" name="entry_910138129" id="entry_910138129" required>
+        </div>
+        <div class="form-group">
+            <label for="entry_285240089">Téléphone <span class="form-required">*</span></label>
+            <input type="tel" name="entry_285240089" id="entry_285240089" required>
+        </div>
+        <div class="form-group">
+            <button type="submit" class="btn btn--blue btn--small">Envoyer</button>
+        </div>
+    </form>
+{% endblock %}

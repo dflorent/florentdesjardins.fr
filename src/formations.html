@@ -1,0 +1,35 @@
+{% extends 'layouts/default.html' %}
+
+{% block title %}Formations{% endblock %}
+{% block description %}Retrouvez la liste des formations et des ateliers autour du développement web dispensés par Florent Desjardins, formateur indépendant à Lyon.{% endblock %}
+
+{% block content %}
+    <h2>Formations</h2>
+    <p>Enseignant vacataire à l'Université Lyon 3 et ancien formateur dans un centre de formation certifié, je vous propose des ateliers et des formations pratiques, utiles, concrètes et les plus pédagogiques possibles autour du développement web.</p>
+
+    <ul class="alt-list mtm">
+        <li class="alt-list__item">Créer des thèmes WordPress avec Twig et la programmation orientée objet</li>
+        <li class="alt-list__item">Écrire du HTML & CSS simple, maintenable, modulaire et organiser vos projets avec Sass</li>
+        <li class="alt-list__item">Apprendre HTML & CSS et devenez intégrateur web (développeur frontend)</li>
+        <li class="alt-list__item">Apprendre le développement web avec PHP</li>
+    </ul>
+
+    <h3 class="mtl">Je vous rappelle !</h3>
+    <p>Laissez moi vos coordonnées, je vous rappelle dès que possible !</p>
+
+    <form class="mtm" id="recallform" method="post" action="https://docs.google.com/forms/d/1r97TceVzfEDZbiScBrJwHU7FTrhOXehkP0TS0zatSj8/formResponse">
+        <input type="hidden" name="entry_1601581835" value="Formations">
+        <div class="form-group">
+            <label for="entry_910138129">Nom <span class="form-required">*</span></label>
+            <input type="text" name="entry_910138129" id="entry_910138129" required>
+        </div>
+        <div class="form-group">
+            <label for="entry_285240089">Téléphone <span class="form-required">*</span></label>
+            <input type="tel" name="entry_285240089" id="entry_285240089" required>
+        </div>
+        <div class="form-group">
+            <button type="submit" class="btn btn--blue btn--small">Envoyer</button>
+        </div>
+    </form>
+
+{% endblock %}

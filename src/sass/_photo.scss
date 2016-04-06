@@ -1,0 +1,16 @@
+.photo {
+    display: none;
+}
+
+@media(min-width: $breakpoint) {
+    .photo {
+        display: block;
+        font-size: 0;
+        margin-bottom: 20px;
+        text-align: center;
+
+        img {
+            border-radius: 50%;
+        }
+    }
+}

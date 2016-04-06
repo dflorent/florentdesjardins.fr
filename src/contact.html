@@ -1,0 +1,34 @@
+{% extends 'layouts/default.html' %}
+
+{% block title %}Contact{% endblock %}
+{% block description %}Contactez-moi pour tout échange, rencontre ou question sur la création de site web !{% endblock %}
+
+{% block content %}
+    <h2>Contact</h2>
+    <p>Vous souhaitez en savoir plus, vous avez envie d'échanger avec moi, me rencontrer, me poser une question, me faire travailler ou vous souhaitez tout simplement me dire bonjour, envoyez moi un e-mail via le formulaire ci-dessous !</p>
+
+    <form class="mtm" id="contactform" method="post" action="https://docs.google.com/forms/d/1VMyyK21awkOWkTRX3ctm4vLj0QubTmiO0TLKGk0ESCA/formResponse">
+        <div class="form-group">
+            <label for="entry_1155244664">Nom <span class="form-required">*</span></label>
+            <input type="text" name="entry_1155244664" id="entry_1155244664" required>
+        </div>
+        <div class="form-group">
+            <label for="entry_1000000">Email <span class="form-required">*</span></label>
+            <input type="email" name="entry_1000000" id="entry_1000000" required>
+        </div>
+        <div class="form-group">
+            <label for="entry_1000001">Message <span class="form-required">*</span></label>
+            <textarea name="entry_1000001" id="entry_1000001" required></textarea>
+        </div>
+        <div class="form-group">
+            <input type="submit" class="btn btn--blue btn--small" value="Envoyer">
+        </div>
+    </form>
+
+    <h3 class="mtl">Réseaux sociaux</h3>
+    <ul class="alt-list mtl">
+        <li class="alt-list__item"><a href="https://twitter.com/dflorent">Twitter</a></li>
+        <li class="alt-list__item"><a href="https://github.com/dflorent">Github</a></li>
+        <li class="alt-list__item"><a href="http://www.linkedin.com/in/florentdesjardins">LinkedIn</a></li>
+    </ul>
+{% endblock %}

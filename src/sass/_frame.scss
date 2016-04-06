@@ -1,0 +1,17 @@
+@media(min-width: $breakpoint) {
+    .frame {
+        display: flex;
+        flex-flow: row nowrap;
+    }
+
+    .frame__nav {
+        border-right: 1px solid $border-color;
+        border-bottom: 0;
+        padding: 50px 0 30px 0;
+        width: $nav-width;
+    }
+
+    .frame__content {
+        flex: 1;
+    }
+}

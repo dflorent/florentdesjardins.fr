@@ -1,0 +1,2 @@
+npm run build --env prod
+rsync -e ssh -avz --delete-after build/ user@serveur:/dossier/destination/

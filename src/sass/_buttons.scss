@@ -1,0 +1,52 @@
+.btn {
+    display: inline-block;
+    cursor: pointer;
+    margin: 2px 0;
+    line-height: 45px;
+    padding: 0 25px;
+    text-align: center;
+    border: 1px solid;
+    border-radius: 3px;
+    color: $base-color;
+    background: white;
+    border-color: $border-color;
+
+    &:hover {
+        text-decoration: none;
+    }
+
+    &--blue {
+        color: white;
+        background-color: #0095ff;
+        border-color: #07c;
+        box-shadow: inset 0 1px 0 #66bfff;
+    }
+
+    &--small {
+        line-height: 35px;
+        padding: 0 15px;
+    }
+
+    &--large {
+        line-height: 55px;
+        padding: 0 35px;
+    }
+}
+
+@media(min-width: $breakpoint) {
+    .btn:hover {
+        border-color: #adadad;
+        background: #e6e6e6;
+    }
+
+    .btn--blue:hover {
+        background-color: #07c;
+        border-color: #005999;
+        box-shadow: inset 0 1px 0 #3af;
+    }
+}
+
+#goog-wm-sb {
+    @extend .btn;
+    display: block;
+}

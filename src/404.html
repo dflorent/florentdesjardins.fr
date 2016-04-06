@@ -1,0 +1,20 @@
+{% extends 'layouts/default.html' %}
+
+{% block title %}Erreur 404{% endblock %}
+
+{% block content %}
+    <h2>Erreur 404</h2>
+    <p>Désolé la page que vous avez demandée semble introuvable.</p>
+    <div class="mtm">
+        <a href="/" class="btn btn--small btn--blue">Retour à la page d'accueil</a>
+    </div>
+
+    <div class="mtl">
+        <script>
+            var GOOG_FIXURL_LANG = (navigator.language || '').slice(0,2),GOOG_FIXURL_SITE = location.host;
+        </script>
+        <script src="//linkhelp.clients.google.com/tbproxy/lh/wm/fixurl.js"></script>
+    </div>
+
+    <script type="text/javascript" src="/js/script.min.js"></script>
+{% endblock %}
