@@ -1,0 +1,19 @@
+.testimonial {
+    border: 1px solid $border-color;
+    padding: 20px;
+
+    &__body {
+        border-bottom: 1px solid $border-color;
+        padding-bottom: 15px;
+        margin-bottom: 15px;
+    }
+
+    &__author {
+        font-weight: bold;
+    }
+
+    &__job {
+        font-style: italic;
+        color: #999;
+    }
+}
