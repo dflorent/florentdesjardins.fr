@@ -105,3 +105,27 @@ li ol {
         margin-top: 0;
     }
 }
+
+.external {
+    &__link,
+    &__icon {
+        vertical-align: middle;
+    }
+
+    &__icon {
+        margin-right: 4px;
+        color: $link-color;
+    }
+
+    &__link {
+        display: inline-block;
+    }
+
+    .fa-github {
+        font-size: 17px;
+    }
+}
+
+.tags {
+    color: #999;
+}
