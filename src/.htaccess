@@ -1,8 +1,5 @@
 ErrorDocument 404 /404.html
 
 RewriteEngine On
-RedirectPermanent /static/pdf/cv_florent_desjardins.pdf http://florentdesjardins.fr/prestations
-RedirectPermanent /projets http://florentdesjardins.fr/realisations
-RedirectPermanent /experience http://florentdesjardins.fr/prestations
-RedirectPermanent /competences http://florentdesjardins.fr/prestations
-RedirectPermanent /formation http://florentdesjardins.fr
+RedirectPermanent /prestations http://florentdesjardins.fr/competences
+RedirectPermanent /formation-professionnelle-web-lyon http://florentdesjardins.fr/competences
