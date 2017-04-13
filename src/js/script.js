@@ -8,6 +8,10 @@ $(function() {
     var age = moment().diff(moment('19870401', 'YYYYMMDD'), 'years');
     $('#age').append(age);
 
+    // experience calculation
+    var experience = moment().diff(moment('20100801', 'YYYYMMDD'), 'years');
+    $('.experience').append(experience + ' ans');
+
     // current year copyright
     $('#year').append(moment().format('Y'));
 
